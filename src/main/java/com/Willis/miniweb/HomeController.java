@@ -11,4 +11,11 @@ public class HomeController {
     public String greet(){
         return "Welcome to Web Project";
     }
+
+    @RequestMapping("/about")
+    public String about(){
+        return "About us";
+    }
+
+
 }

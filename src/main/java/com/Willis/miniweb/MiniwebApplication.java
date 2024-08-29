@@ -9,5 +9,4 @@ public class MiniwebApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(MiniwebApplication.class, args);
 	}
-
 }
