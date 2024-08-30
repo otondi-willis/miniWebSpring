@@ -1,4 +1,4 @@
-package com.Willis.miniweb;
+package com.Willis.miniweb.model;
 
 import lombok.Data;
 
