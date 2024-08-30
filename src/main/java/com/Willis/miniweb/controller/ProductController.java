@@ -11,18 +11,18 @@ import java.util.List;
 public class ProductController {
     @Autowired
     ProductService service;
-    @RequestMapping("/products")
+    @GetMapping("/products")
 
     public List<Product> getProducts(){
         return service.getProducts();
     }
-    @RequestMapping("/products/{prodId}")
+    @GetMapping("/products/{prodId}")
     public Product getProductById(@PathVariable int prodId){
         return service.getProductById(prodId);
 
     }
     @PostMapping("/products")
-    public void addProduct(Product prod){
+    public void addProduct(@RequestBody Product prod){
         System.out.println(prod);
         service.addProduct(prod);
     }
