@@ -1,7 +1,16 @@
 package com.Willis.miniweb.controller;
 
+import com.Willis.miniweb.model.Product;
+import com.Willis.miniweb.service.ProductService;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import java.util.List;
+
 public class ProductController {
-    public String getProducts(){
-        return "";
+    @Autowired
+    ProductService service;
+
+    public List<Product> getProducts(){
+        return service.getProducts();
     }
 }
