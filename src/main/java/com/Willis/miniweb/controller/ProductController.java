@@ -1,4 +1,4 @@
-package com.Willis.miniweb;
+package com.Willis.miniweb.controller;
 
 public class ProductController {
     public String getProducts(){
