@@ -37,4 +37,7 @@ public class ProductService {
         }
         products.set(index, prod);}
     }
+
+    public void deleteProduct(int prodId) {
+    }
 }
