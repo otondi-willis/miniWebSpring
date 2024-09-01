@@ -1,10 +1,12 @@
 package com.Willis.miniweb.model;
 
+import jakarta.persistence.Entity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import org.springframework.stereotype.Component;
 
 @Component
+@Entity
 public class Product {
     private int prodId;
     private String prodName;
